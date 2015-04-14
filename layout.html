@@ -3,26 +3,23 @@
   <head>
 	<meta charset="UTF-8" />
 	<title>CS 290 Assign2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css"  />
 </head>
 <body>
 
-  <TABLE class="TFtable" BORDER=2>
+  <TABLE class="Ttable" BORDER=2>
 <CAPTION>Who wins? Cell content indicates the status of the row entry.</CAPTION>
 <tbody>
-
-
-
   <tr>
-    <th></th>
-    <th>Godzilla</th>		
-    <th>Batman</th>
-    <th>Shaq</th>
-    <th>Aaron Carter</th>		
-    <th>Abe Lincoln</th>
+    <th bgcolor="#FFFFFF"></th>
+    <th bgcolor="#FFFFFF"><b>Godzilla</b></th>		
+    <th bgcolor="#FFFFFF"><b>Batman</b></th>
+    <th bgcolor="#FFFFFF"><b>Shaq</b></th>
+    <th bgcolor="#FFFFFF"><b>Aaron Carter</b></th>		
+    <th bgcolor="#FFFFFF"><b>Abe Lincoln</b></th>
   </tr>
     <tr>
-        <th scope="row">Godzilla</th>
+        <th scope="row"><i>Godzilla</i></th>
         <td>N/A</td>
         <td>Minor Loss</td>
         <td>Loss</td>
@@ -31,7 +28,7 @@
     </tr>
     
     <tr>
-        <th scope="row">Batman</th>
+        <th scope="row"><i>Batman</i></th>
         <td>Minor Win</td>
         <td>N/A</td>
         <td>Total Victory</td>
@@ -40,7 +37,7 @@
     </tr>
     
     <tr>
-        <th scope="row">Shaq</th>
+        <th scope="row"><i>Shaq</i></th>
         <td>Win</td>
         <td>Total Loss</td>
         <td>Loss N/A</td>
@@ -49,7 +46,7 @@
     </tr>
     
     <tr>
-        <th scope="row">Aaron Carter</th>
+        <th scope="row"><i>Aaron Carter</i></th>
         <td>Unknown</td>
         <td>TotalLoss</td>
         <td>Minor Win</td>
@@ -58,7 +55,7 @@
     </tr>
     
     <tr>
-        <th scope="row">Abe Lincoln</th>
+        <th scope="row"><i>Abe Lincoln<i></th>
         <td>Unknown</td>
         <td>Total Victory</td>
         <td>Unknown</td>
@@ -69,8 +66,8 @@
 </tbody>
 
 <tfoot>
-    <th scope="row" colspan="2">Footer 1</th>
-    <th scope="row" colspan="4">Footer 2 </th>
+    <th scope="row" colspan="2" bgcolor="#FFFFFF">Footer 1</th>
+    <th scope="row" colspan="4" bgcolor="#FFFFFF">Footer 2 </th>
 </tfoot>
 
 </TABLE>
@@ -85,8 +82,18 @@
 </dl>
 
 
+<div id="outer-content">
+<h1></h1>
+    <div id="inner-content">
+       <h2>Here is some content.</h2>
+    </div>  
+</div>
+<br><br>
+
 <form action="http://web.engr.oregonstate.edu/~osterbit/2/repo/classcontent/
 form_tests/Formtest.php" method="get">
+<fieldset>
+<legend>Some POST Data</legend>
 Text here: <input type="text" name="text_input"><br>
 
 Number Here: <input type="number" name="numerical_input" min="1" max="100"><br>
@@ -98,10 +105,14 @@ Password here: <input type="password" name="password_input"><br><br>
 <input type="radio" name="candy" value="Mentos">Mentos<br>
 <br>
 <input type="submit" value="Submit"><br><br>
+</fieldset>
 </form>
+<br><br>
 
 <form action="http://web.engr.oregonstate.edu/~osterbit/2/repo/classcontent/
 form_tests/Formtest.php" method="post">
+<fieldset>
+<legend>Some POST Data</legend>
 Text here: <input type="text" name="text_input"><br>
 
 Number Here: <input type="number" name="numerical_input" min="1" max="100"><br>
@@ -113,7 +124,9 @@ Password here: <input type="password" name="password_input"><br><br>
 <input type="radio" name="candy" value="Mentos">Mentos<br>
 <br>
 <input type="submit" value="Submit"><br><br>
+</fieldset>
 </form>
+<br><br>
 
 <p>
   <img src="smiley.gif" alt="Smiley face"
@@ -146,37 +159,6 @@ Password here: <input type="password" name="password_input"><br><br>
   A paragraph with an image. A paragraph with an image.</p>
   
 
-
-  <style type="text/css">
-	.TFtable{
-		
-		border-collapse:collapse; 
-	}
-	.TFtable td{ 
-		padding:7px; border:#4e95f4 1px solid;
-	}
-	
-	/*  Define the background color for all the ODD background rows  */
-	.TFtable tr:nth-child(odd){ 
-		background: #98FB98;
-	}
-	/*  Define the background color for all the EVEN background rows  */
-	.TFtable tr:nth-child(even){
-		background: #87CEEB;
-	}
-</style>
-
-<table class="TFtable">
-	<tr><td>Text</td><td>Text</td><td>Text</td></tr>
-	<tr><td>Text</td><td>Text</td><td>Text</td></tr>
-	<tr><td>Text</td><td>Text</td><td>Text</td></tr>
-	<tr><td>Text</td><td>Text</td><td>Text</td></tr>
-</table>
-
-  
-  
-  
-  
   
 </body>
 </html>

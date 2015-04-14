@@ -1,11 +1,43 @@
-a:hover {
-    background-color: purple;
-    
-tbody tr:nth-child(odd) {
-  background: #eee;
-  
-  tr:nth-child(even) {
-    background-color: #000000;
+#outer-content {
+    background-color:pink;
+    color:white;
+    text-align:center;
+    padding:10px;
+    width: 75%;
+    margin:20px 20px 
 }
+
+#inner-content {
+    background-color:blue;
+    color:black;
+    text-align:center;
+    padding:10px 10px 10px 10px;
+    width: 75%:
 }
-    
+
+.Ttable tr:nth-child(odd){ 
+		background: #98FB98;
+}
+
+.Ttable tr:nth-child(even){
+		background: #87CEEB;
+}
+
+.Ttable tfoot {
+    font-size: ;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    color: #000000;
+    background-color: white;
+}
+
+.Ttable th {
+    font-weight:normal;
+}
+
+
+dt:hover + dd{
+  background-color: purple;
+}
+
